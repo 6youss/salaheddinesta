@@ -1,4 +1,4 @@
 # sta-portfolio
 
 inspiration:
-pxltheme.club/wp/bako/
+http://pxltheme.club/wp/bako/
