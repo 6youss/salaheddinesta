@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-"b1"
-"b1 edited this"
+"new b1"
 function App() {
   return (
     <div className="App">
