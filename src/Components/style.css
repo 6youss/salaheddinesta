@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;   
+    overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+    margin: 0px;  /*removes default style*/
+    display: flex;  /*enables flex content for its children*/
+    box-sizing: border-box;
+    background-color:  #efefef;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+#root {display: flex;}
+.App {
+    display: flex;
+}
+
+.column {
+    height: 100%;  /*allows both columns to span the full height of the browser window*/
+    display: flex;
+    flex-direction: column;  /*places the left and right headers above the bottom content*/
+}
+
+#left {
+    flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
+    width: 15%;
+    background-color:  #fff;
+}
+
+.top-left {
+    flex-shink: 0;
+}
+
+.top-right {
+    flex-shrink: 0;
+    display: inline-flex;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+#right .bottom {
+    flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+    overflow-y: auto;  /*adds scroll to this container*/
+}
+#left .bottom a{
+    display: block;
+    
+    color: #232323;
+    padding: 8px 5px 5px 5px !important;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: normal;
+    position: relative;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#right{
+    padding: 10px;
+    width: 85%;
+}
+
+.logo{
+    height: 20vmin;
+}
