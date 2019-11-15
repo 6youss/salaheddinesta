@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 "new b1"
+=======
+"new b2"
+>>>>>>> test
 function App() {
   return (
     <div className="App">
