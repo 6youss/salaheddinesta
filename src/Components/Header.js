@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
-
+import { Link as ScrollLink } from 'react-scroll'
+ 
 function Header() {
+
+    function handleSetActive(){        
+    }
+
     return (
         <div id="left" className="column">
         <div className="top-left">
@@ -11,7 +16,9 @@ function Header() {
             </center>
         </div>
         <div className="bottom">
-            <Link to="/">About me</Link>
+            <ScrollLink activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={handleSetActive}>
+                About me
+            </ScrollLink>
             <Link to="/">Education</Link>
             <Link to="/">Experience</Link>
             <Link to="/">Skills</Link>
