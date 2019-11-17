@@ -15,26 +15,26 @@ function Header() {
                 </center>
             </div>
             <div className="bottom">
-                <ScrollLink activeClass="active" to="about" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    About me
+                <ScrollLink activeClass="active" to="about" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">About me</Link> 
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="education" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Education
+                <ScrollLink  to="education" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">Education</Link>
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="experience" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Experience
+                <ScrollLink  to="experience" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">Experience</Link>
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="skills" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Skills
+                <ScrollLink  to="skills" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">skills</Link>
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="portfolio" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Portfolio
+                <ScrollLink  to="portfolio" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">Portfolio</Link>
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="reaserch" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Reaserche Publication
+                <ScrollLink  to="reaserch" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500}>
+                    <Link to="/">Research publication</Link>
                 </ScrollLink>
-                <ScrollLink activeClass="active" to="contact" containerId="containerElement" spy={true} smooth={true} offset={-10} duration={500} >
-                    Contact 
+                <ScrollLink  to="contact" containerId="containerElement" spy={true} smooth={true} offset={-600} duration={500}>
+                    <Link to="/">Contact </Link>
                 </ScrollLink>
             </div>
         </div>

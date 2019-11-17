@@ -40,7 +40,6 @@ export class App extends React.Component{
       <div className="App">
         <Router >
           <Header/>
-          <hr/>
           <Switch>
               <Route exact path={"/"} component={Home}/>
               <Route path='/Portfolio_ReactApp' component={Portfolio_ReactApp} />

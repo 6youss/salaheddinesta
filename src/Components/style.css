@@ -29,6 +29,7 @@ body {
 }
 
 #left {
+    height: 100%;
     flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
     width: 15%;
     background-color:  #fff;
@@ -54,7 +55,6 @@ ul {
 }
 #left .bottom a{
     display: block;
-    
     color: #232323;
     padding: 8px 5px 5px 5px !important;
     font-size: 1.2rem;
@@ -66,10 +66,97 @@ ul {
 }
 
 #right{
-    padding: 10px;
     width: 85%;
+   
 }
 
+
 .logo{
-    height: 20vmin;
+    height: 30vmin;
 }
+.about-me{
+    min-height: 98vh;
+    background:url("./Me.png"), url("./Me.jpg");
+    background-size:cover;
+    padding: 10% 0% 0% 12%;
+}
+.about-me h1,.about-me h3{
+    color:#afafaf;
+    font-size: 18px;
+    line-height: 26px;
+}
+.about-me h3{
+    text-align: center;
+    padding: 5px;
+    border-top: solid 1px #afafaf;
+    border-bottom: solid 1px #afafaf;
+    max-width: 250px;
+}
+
+.about-me h2{
+    color:#fff;
+    font-size: 48px;
+    line-height: 0.75em;
+}
+@keyframes br {
+0% {
+    width: 30%;
+    border-bottom: solid 2px #039be5;
+}
+
+100%{
+    width: 80%;
+    border-bottom: solid 2px #039be5;
+}
+}
+
+.active{ 
+    width:80%;
+    border-bottom: solid 2px #039be5;
+    animation: br 0.75s ease-in-out ;
+}
+.active:before{ 
+    width:400%;
+    border-bottom: solid 2px #039be5;
+}
+
+a {
+    text-decoration: none;
+}
+#right a{
+    text-align: center;
+}
+.Imglogo{
+    width: 250px;
+    height: 250px;
+    align-content: center;
+}
+
+/* .education{
+    background-color: orange;
+}
+
+.experience{
+    background-color:green;
+}
+
+.partenariat{
+    background-color:goldenrod;
+}
+
+.skills {
+    background-color:cadetblue;
+}
+.portfolio{
+    background-color:wheat;
+}
+.reaserch{
+    background-color:crimson;
+}
+.activities{
+    background-color:rebeccapurple;
+}
+.contact{
+    background-color:khaki;
+}  */
+
